@@ -13,6 +13,8 @@ export function QueryEditor({
   executionTime,
   errorMessage,
 }) {
+
+  console.log(executionTime)
   return (
     <div className="query-editor">
       <div className="editor-header">
@@ -68,7 +70,7 @@ export function QueryEditor({
         />
       </div>
 
-      {executionTime && !errorMessage && (
+      {executionTime != null  && !errorMessage && (
         <div className={`execution-time ${isDarkMode ? 'dark' : 'light'}`}>
           Query executed in {executionTime.toFixed(3)} seconds
         </div>
