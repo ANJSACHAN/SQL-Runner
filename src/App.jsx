@@ -1,10 +1,10 @@
 import React from 'react'
-import SQLQueryApp from './components/SQLQueryUI'
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
     <div>
-      <SQLQueryApp/>
+      <Dashboard/>
     </div>
   )
 }
